@@ -1,4 +1,5 @@
 
+
 \chapter{Physics performance studies}
 \label{cha:performance}
 
@@ -27,7 +28,7 @@ as jets at the highest \pT have a narrow rapidity distribution that falls within
 studies, we expect the following loss of statistics: FIXME
 
 Some of the physics impact can be recovered using tracker + EMCal reconstruction of jets, although reduced control over the jet 
-energy scale and increased jet-by-jet energy fluctuations will limit the precision that can be achieved with such studies.
+energy scale and increased jet-by-jet fluctuations will limit the precision that can be achieved with such studies.
 
 \begin{figure}[hbt]
   \centering
@@ -73,12 +74,31 @@ measurement.
 
 \subsection{Reduced EMCal pseudorapidity coverage}
 Reducing the EMCal coverage will directly affect the expected statistics for $\Upsilon$ to $e^+ e^-$ and photon-based measurements. The 
-corresponding loss in statistics is summarized in the table below, based on generator level studies. For jet measurements, 
+corresponding loss in statistics is summarized in the table below, based on generator level studies. For jet measurements, the reduced 
+coverage leads to a change in jet response across the EMCal boundary. This effect was evaluated by full GEANT simulations and reconstruction
+of the single jet response in different regions of pseudorapidity and jet \pt.
+
+\section{Outer tracker}
+
+For the outer tracker, the performance of a TPC tracker was evaluated using GEANT simulations of single particles, single $\Upsilon$ to $e^+ e^-$
+decays, and full HIJING and GEANT simulations in a limited acceptance around mid-rapidity (due to timing limitations). Simulations were performed
+for an ideal TPC and two configurations with inner field cage boundary at $r=20$~cm and $r=30$~cm. For the latter configurations, effects of 
+residual space charge distortions expected after corrections were included. We evaluated general performance characteristics (efficency, fake track
+rate, DCA and momentum resolution) and specifically the $\Upsilon$ mass resolutions for the different cases. The TPC simulations were performed
+in combination with the 3-layer MAPS configuration of the reference design, and include the effects of track reconstruction and kinematic fits. 
+The effect of various inner tracker options on the tracking performance is evaluated separately in \ref{sec:innertracker}.
+\subsection{Tracking performance evaluation}
+\subsection{$\Upsilon$ mass resolution}
 
 
-To keep the discussion of options in the preceedings pages as brief as
-possible, we collect here the performance plots detailing the effects
-of various changes to a reference design.
+\section{Inner tracker}
+\label{sec:innertracker}
+\subsection{VTX pixel configuration}
+\subsection{2-layer MAPS tracker}
+\section{DAQ and trigger}
+\subsection{Minimum bias trigger counter and vertex locator}
+\subsection{Offline event building}
+
 
 \begin{figure}[hbt]
   \centering
