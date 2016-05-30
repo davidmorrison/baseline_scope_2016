@@ -1,3 +1,0 @@
-\contentsline {chapter}{List of Tables}{3}{section*.7}
-\contentsline {chapter}{List of Figures}{5}{section*.9}
-\contentsfinish 

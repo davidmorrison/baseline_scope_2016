@@ -29,24 +29,6 @@ studies, we expect the following loss of statistics: FIXME
 Some of the physics impact can be recovered using tracker + EMCal reconstruction of jets, although reduced control over the jet 
 energy scale and increased jet-by-jet fluctuations will limit the precision that can be achieved with such studies.
 
-\begin{figure}[hbt]
-  \centering
-%  \includegraphics[width=0.6\linewidth]{figs/eta_tower_fraction}
-  \caption{EMCal coverage VS tower counts. With half tower produced to cover from central pseudo-rapidity, 2D SPACAL cover to an eta of 0.55 (quite linear in eta coverage) and 1D SPACAL cover to eta of 0.63 (forward tower has less eta-bite) at its outer radius and 0.70 at its inner radius (clip into forward acceptance). Nevertheless, EM shower coverage to |eta|<=0.6 is a good approximation.}
-  \label{fig:eta_tower_fraction}
-\end{figure}
-
-\begin{figure}[hbt]
-  \centering
-%  \includegraphics[width=0.6\linewidth]{figs/eid_auau}
-  \caption{For 2x2-ganging EMCal + inner HCal, inclusive charged
-    hadron rejection is plotted as function of electron ID efficiency,
-    for negatively charged tracks of three choices of momentum and for
-    middle and edge rapidity in 10\% most central Au+Au events.}
-  \label{fig:eid_auau}
-\end{figure}
-
-
 \subsection{Removal of the inner HCAL}
 
 The impact on jet energy scale and fluctuations for this option is expected to be larger than for the outer HCAL thinning, 
@@ -82,29 +64,40 @@ of various changes to a reference design.
 
 \begin{figure}[hbt]
   \centering
-%  \includegraphics[width=0.6\linewidth]{figs/eta_tower_fraction}
-  \caption{EMCal coverage VS tower counts. With half tower produced to cover from central pseudo-rapidity, 2D SPACAL cover to an eta of 0.55 (quite linear in eta coverage) and 1D SPACAL cover to eta of 0.63 (forward tower has less eta-bite) at its outer radius and 0.70 at its inner radius (clip into forward acceptance). Nevertheless, EM shower coverage to |eta|<=0.6 is a good approximation.}
-  \label{fig:eta_tower_fraction}
-\end{figure}
-
-\begin{figure}[hbt]
-  \centering
-%  \includegraphics[width=0.6\linewidth]{figs/eid_auau}
-  \caption{For 2x2-ganging EMCal + inner HCal, inclusive charged
-    hadron rejection is plotted as function of electron ID efficiency,
-    for negatively charged tracks of three choices of momentum and for
-    middle and edge rapidity in 10\% most central Au+Au events.}
+  \includegraphics[width=0.4\linewidth]{figs/DrawEcal_Likelihood_Sum_RejectionCurve_AuAuSummary}
+  \hspace{0.1\linewidth}
+  \includegraphics[width=0.4\linewidth]{figs/DrawEcal_Likelihood_Sum_RejectionCurve_AuAuSummaryPos}
+  \caption{For a $2\times2$ ganged EMCal (with inner HCal present)
+    inclusive charged hadron rejection is plotted on the left (right)
+    as function of electron ID efficiency, for negatively (positively)
+    charged tracks of three choices of momentum and for middle and
+    edge rapidity in 10\% most central Au+Au events.}
   \label{fig:eid_auau}
 \end{figure}
 
-%DrawEcal_Likelihood_Sum_RejectionCurve_AuAuSummary_Compare
 \begin{figure}[hbt]
   \centering
-
-  \caption{ Ratios of inclusive charged hadron rejection of $2\times2$ ganged
- EMCal to the reference design, as functions of electron ID
- efficiency. This is evaluated for negatively charged tracks of three
- choices of momentum and for middle and edge rapidity in 10% most
- central Au+Au events.}
+  \includegraphics[width=0.5\linewidth]{figs/DrawEcal_Likelihood_Sum_RejectionCurve_AuAuSummary_Compare}
+  \caption{ Ratios of inclusive charged hadron rejection of $2\times2$
+    ganged EMCal to the reference design, as functions of electron ID
+    efficiency. This is evaluated for negatively charged tracks of
+    three choices of momentum and for middle and edge rapidity in 10\%
+    most central Au+Au events.}
 \label{fig:eid_ratios_auau}
 \end{figure}
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.5\linewidth]{figs/jet_response_reduced_emcal_eta_0} \\
+  \includegraphics[width=0.5\linewidth]{figs/jet_response_reduced_emcal_eta_05} \\
+  \includegraphics[width=0.5\linewidth]{figs/jet_response_reduced_emcal_eta_07}
+  \caption{The effect on the jet response on reducing the EMCal to an
+    acceptance within $|\eta|<0.6$ was also examined with full \geant
+    simulations.  (top) The jet response for $R = 0.2$ jets near $\eta
+  = 0$. (middle) The jet response for $R = 0.2$ jets near $\eta
+  = 0.6$. (bottom) The jet response for $R = 0.2$ jets near $\eta
+  = 0.8$.}
+  \label{fig:jet_response_reduced_emcal}
+\end{figure}
+
+
