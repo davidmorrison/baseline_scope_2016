@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/MacPorts 2014_8) (preloaded format=pdflatex 2014.10.23)  30 MAY 2016 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/MacPorts 2014_8) (preloaded format=pdflatex 2014.10.23)  30 MAY 2016 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,29 +1015,26 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13074 strings out of 493117
- 197698 string characters out of 6137198
- 342260 words of memory out of 5000000
+ 13073 strings out of 493117
+ 197686 string characters out of 6137198
+ 342294 words of memory out of 5000000
  16004 multiletter control sequences out of 15000+600000
  55924 words of font info for 228 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,43p,869b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{appendix*.24} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fon
-ts/type1/public/mathpazo/fplmr.pfb></opt/local/share/texmf-texlive/fonts/type1/
-public/mathpazo/fplmri.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/helv
-etic/uhvr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a
-.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></opt/
-local/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (17 pages, 755171 bytes).
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/f
+onts/type1/public/mathpazo/fplmr.pfb></opt/local/share/texmf-texlive/fonts/type
+1/public/mathpazo/fplmri.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplb
+8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></op
+t/local/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (17 pages, 755214 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 245 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  41571 words of extra memory for PDF output out of 42996 (max. 10000000)
 
