@@ -1,2 +1,53 @@
-\chapter*{Thinned Outer HCal}
+\section*{Thinned Outer HCal}
 \label{ohcal_thin}
+
+\textbf{Cost delta: -\$0.4M}
+
+We investigated reducing the thickness of the outer HCal (nominal
+depth of 82.5~cm) by 20~cm, or approxiately one nuclear interaction
+length.  Several possible effects were investigated through full
+\textsc{GEANT4} simulations of the calorimeter response.  It should be
+noted that the calorimeter simulations have recently been compared to
+data from the FNAL test beam and ahve been found to reproduce the
+measured response quite well (put a number in here).  We looked at the
+effect of thinning on the jet energy response, high-$z$ fragmentation
+functions, and triggering in $pp$ and $pAu$.
+
+From a physics perspective, the effect of thinning the outer HCal by
+this amount seems to be moderate, and considered by itself, a thinner
+outer HCal would still enable the core elements of the sphenix physics
+program to be carried out.
+
+From the perspective of the project, the effect of this modification
+would be extremely significant.  The OHCal is the structural backbone
+of the sPHENIX structure.  Reducing the radial thickness will
+significantly reduce the ability of the OHCal to support the detector.
+The finite element analysis would need to be redone. The tilt angle
+reanalyzed and likely changed. The prototyping and test beam would
+have to be redone.  It would make no sense to build the full scale
+mechanical prototype now.  The IHCal will still need some redesign due
+to the changes in the EMCal. We’ll want the $\phi$ segmentation to
+match between the two for mechanical reasons.
+
+Sets the OHCal engineering back as much as twelve months and requires
+R\&D be redone.
+
+\subsection*{Considerations}
+
+In the nominal design, the $5.5 \lambda$ total depth of the
+calorimeter stack (at $\eta = 0$) is distributed as $1 \lambda$
+(EMCal), $1 \lambda$ (inner HCal), and $3.5 \lambda$.  If the outer
+HCal is reduced to $2.5 \lambda$, one has to consider the effects if
+one or more of the other calorimeters in the stack is also modified.
+If the inner HCal is not installed, the depth of the calorimeter stack
+is reduced by an additional $1 \lambda$ over the whole acceptance,
+falling to $2.5 \lambda$ at midrapidity.
+
+If the EMCal acceptance is cut to $|\eta| < 0.7$, the thickness of the
+calorimeter stack in the range $0.7 < \eta < 1.1$ becomes thinner by
+$1 \lambda$, but the effect in that range (aside from the lack of
+EMCal coverage) is moderated by the increasing thickness of the
+calorimeters along lines of constant $\eta$ due to their rectangular
+profile.
+
+

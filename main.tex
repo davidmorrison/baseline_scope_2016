@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside,notitlepage]{book}
+\documentclass[11pt,oneside,notitlepage]{book}
 
 \RequirePackage{lineno}
 \usepackage{import}
@@ -111,19 +111,29 @@
 
 \resetlinenumber
 
-\tableofcontents
+%\tableofcontents
 \cleardoublepage
 
 \mainmatter
 
 \renewcommand{\thepage}{\arabic{page}}
 \setcounter{chapter}{0}
+
 \setcounter{page}{1}
+
+\input{body}
+\input{daq}
+\input{tpc}
+\input{emcal_ganging}
+\input{emcal_segmentation}
+\input{ohcal_thin}
+\input{ohcal_short}
+\input{maps}
 
 \cleardoublepage
 
 \appendix
-
+\input{appendix}
 \input{charge}
 
 \cleardoublepage
@@ -133,19 +143,19 @@
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
+%\listoftables
 
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
-\listoffigures
+%\listoffigures
 
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{References}
+%\addcontentsline{toc}{chapter}{References}
 
-\bibliographystyle{unsrturl}
-\bibliography{refs}
+%\bibliographystyle{unsrturl}
+%\bibliography{refs}
 
 \end{document} 
 
