@@ -10,19 +10,23 @@ those cost changes.
 
 \renewcommand{\arraystretch}{1.4}
 \begin{table}
-  \begin{tabular}{lrrp{2in}}
+  \begin{tabular}{ld{3.1}d{3.1}p{3in}}
     \toprule
-    Option & Cost change (\$M) & Cumulative (\$M) & Impacts \\
+    Option & \multicolumn{1}{c}{Delta (\$M)} &
+    \multicolumn{1}{c}{Cumulative (\$M)} & Impacts \\
     \midrule
-    MAPS inner tracker & 3.0 & 3.0 & preserve HF jet tagging \\
+    \multirow{3}{*}{MAPS inner tracker} &  \multirow{3}{*}{3.0} &
+    \multirow{3}{*}{3.0} & preserve HF jet tagging \\
+    & & & support for TPC tracks \\
+& & & rejection of low $p_T$ fakes \\
     \midrule
     \multirow{2}{*}{Trigger/DAQ} & \multirow{2}{*}{-1.5} & \multirow{2}{*}{1.5} & potential delay to analysis \\
-    & & &  unreliable equipment \\
+    & & &  operational risk of past-EOL equipment \\
     \midrule
     \multirow{3}{*}{EMCal 2x2 ganging} & \multirow{3}{*}{-1.7} & \multirow{3}{*}{-0.2}
     & worsened $e/\pi$ separation \\
     & & & reduced $\Upsilon$ statistics \\
-    & & & worse $\gamma$ isolation
+    & & & worsened $\gamma$ isolation
     performance \\
     \midrule
     \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-2.0} & \multirow{3}{*}{-2.2} & reduced $\Upsilon$
