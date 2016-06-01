@@ -10,10 +10,10 @@ those cost changes.
 
 \renewcommand{\arraystretch}{1.4}
 \begin{table}
-  \begin{tabular}{ld{3.1}d{3.1}p{3in}}
+  \begin{tabular}{ld{3.1}d{3.1}p{3.25in}}
     \toprule
-    Option & \multicolumn{1}{c}{Delta (\$M)} &
-    \multicolumn{1}{c}{Cumulative (\$M)} & Impacts \\
+    Option & \multicolumn{1}{c}{$\Delta$ (\$M)} &
+    \multicolumn{1}{c}{$\Sigma$ (\$M)} & Impacts \\
     \midrule
     \multirow{3}{*}{MAPS inner tracker} &  \multirow{3}{*}{3.0} &
     \multirow{3}{*}{3.0} & preserve HF jet tagging \\
@@ -40,7 +40,7 @@ those cost changes.
     schedule \\
     \midrule
     \multirow{2}{*}{Short HCal} & \multirow{2}{*}{-0.7} & \multirow{2}{*}{-3.3} & reduced acceptance for jets \\
-    & & & eliminate clear volume for possible forward tracking \\
+    & & & no clear volume for possible forward tracking \\
     \midrule
     \multirow{3}{*}{Remove inner HCal} & \multirow{3}{*}{-0.8} &
     \multirow{3}{*}{-4.1} & worsened jet response \\ 
@@ -48,6 +48,9 @@ those cost changes.
     & & & worsened $e/\pi$ in p+p \\
     \bottomrule
   \end{tabular}
-  \caption{Ordered list of re-scoping options for the sPHENIX detector}
+  \caption{Ordered list of re-scoping options for the sPHENIX
+    detector. The column labeled ``$\Delta$'' shows the cost delta
+    associated with the particular option. The column labeled
+    ``$\Sigma$'' is the running sum of the cumulative cost changes.}
   \label{tab:rescoping_options}
 \end{table}
