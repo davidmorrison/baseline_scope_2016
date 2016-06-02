@@ -10,7 +10,13 @@ those cost changes.
 
 \renewcommand{\arraystretch}{1.4}
 \begin{table}
-  \begin{tabular}{ld{3.1}d{3.1}p{3.25in}}
+  \caption{Ordered list of re-scoping options for the sPHENIX
+    detector. The column labeled ``$\Delta$'' shows the cost delta
+    associated with the particular option. The column labeled
+    ``$\Sigma$'' is the running sum of the cumulative cost changes.}
+  \label{tab:rescoping_options}
+  \centering
+  \begin{tabular}{ld{3.1}d{3.1}l}
     \toprule
     Option & \multicolumn{1}{c}{$\Delta$ (\$M)} &
     \multicolumn{1}{c}{$\Sigma$ (\$M)} & Impacts \\
@@ -23,7 +29,10 @@ those cost changes.
     \multirow{1}{*}{No VTX reuse} & \multirow{1}{*}{-0.2} &
     \multirow{1}{*}{2.8} & see MAPS above \\
     \midrule
-    \multirow{3}{*}{Trigger/DAQ} & \multirow{3}{*}{-1.5} &
+    \multirow{1}{*}{Re-use trigger counter} & \multirow{1}{*}{-0.6} & \multirow{1}{*}{2.2} & potentially worsened vertex
+    resolution \\ 
+    \midrule
+    \multirow{3}{*}{DAQ} & \multirow{3}{*}{-0.9} &
     \multirow{3}{*}{1.3} & possible reduction of min. bias data sample
     \\ 
     & & & potential delay to analysis \\
@@ -37,36 +46,37 @@ those cost changes.
     \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-2.0} & \multirow{3}{*}{-2.4} & reduced $\Upsilon$
     statistics \\
     & & &  reduced direct photon statistics \\
-    & & & more difficult jet    unfolding \\
+    & & &  worse control of jet unfolding systematics\\
     \bottomrule
   \end{tabular}
-  \caption{Ordered list of re-scoping options for the sPHENIX
-    detector. The column labeled ``$\Delta$'' shows the cost delta
-    associated with the particular option. The column labeled
-    ``$\Sigma$'' is the running sum of the cumulative cost changes.}
-  \label{tab:rescoping_options}
 \end{table}
 
 \begin{table}[hbt]
-  \begin{tabular}{ld{3.1}p{3.25in}}
+  \caption{List of considered HCal modifications.  Considered in
+    isolation, the effect of any one of these alterations on the
+    physics capabilities is moderate.  However, a combination of these
+    options, or any of them in combination with alterations to the
+    EMCal has very negative effects on the physics capabilities of the
+    experiment.  These alterations also introduce significant new
+    schedule risk and have negative implications for potential forward
+    instrumentation upgrades or EIC suitability.}
+  \label{tab:calo_options}
+  \centering
+  \begin{tabular}{ld{3.1}l}
     \toprule
     Option & \multicolumn{1}{c}{$\Delta$ (\$M)} & Impacts \\
     \midrule
-    \multirow{4}{*}{Thin outer HCal} & \multirow{4}{*}{-0.4} & high $p_T$ punch-through \\
+    \multirow{4}{*}{Thinned outer HCal} & \multirow{4}{*}{-0.4} & high $p_T$ punch-through \\
     & & worsened jet energy response \\
     & & extensive reengineering required \\
     & & risk to schedule \\
     \midrule
-    \multirow{2}{*}{Short HCal} & \multirow{2}{*}{-0.7} & reduced acceptance for jets \\
+    \multirow{2}{*}{HCal reduced $\eta$} & \multirow{2}{*}{-0.7} & reduced acceptance for jets \\
     & &  no clear volume for possible forward tracking \\
     \midrule
-    \multirow{3}{*}{Remove inner HCal} & \multirow{3}{*}{-0.8} & worsened jet response \\ 
+    \multirow{3}{*}{Remove inner HCal} & \multirow{3}{*}{-1.0} & worsened jet response \\ 
     & &  jet flavor bias \\
     & &  worsened $e/\pi$ in p+p \\
     \bottomrule
   \end{tabular}
-  \caption{List of considered HCal modifications.  The savings are
-    relatively modest compared to the goal, the effect on the physics
-    moderate, but the risk to the schedule is very large.}
-  \label{tab:calo_options}
 \end{table}
