@@ -18,34 +18,26 @@ those cost changes.
     \multirow{3}{*}{MAPS inner tracker} &  \multirow{3}{*}{3.0} &
     \multirow{3}{*}{3.0} & preserve HF jet tagging \\
     & & & support for TPC tracks \\
-& & & rejection of low $p_T$ fakes \\
+    & & & greater $z_\mathrm{vertex}$ acceptance \\
     \midrule
-    \multirow{2}{*}{Trigger/DAQ} & \multirow{2}{*}{-1.5} & \multirow{2}{*}{1.5} & potential delay to analysis \\
+    \multirow{1}{*}{No VTX reuse} & \multirow{1}{*}{-0.2} &
+    \multirow{1}{*}{2.8} & see MAPS above \\
+    \midrule
+    \multirow{3}{*}{Trigger/DAQ} & \multirow{3}{*}{-1.5} &
+    \multirow{3}{*}{1.3} & possible reduction of min. bias data sample
+    \\ 
+    & & & potential delay to analysis \\
     & & &  operational risk of past-EOL equipment \\
     \midrule
-    \multirow{3}{*}{EMCal 2x2 ganging} & \multirow{3}{*}{-1.7} & \multirow{3}{*}{-0.2}
-    & worsened $e/\pi$ separation \\
-    & & & reduced $\Upsilon$ statistics \\
-    & & & worsened $\gamma$ isolation
+    2x2 EMCal tower ganging & \multirow{3}{*}{-1.7} & \multirow{3}{*}{-0.4} & worsened $e/\pi$ separation \\
+    or & & & reduced $\Upsilon$ statistics \\
+    coarsened segmentation & & & worsened $\gamma$ isolation
     performance \\
     \midrule
-    \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-2.0} & \multirow{3}{*}{-2.2} & reduced $\Upsilon$
+    \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-2.0} & \multirow{3}{*}{-2.4} & reduced $\Upsilon$
     statistics \\
     & & &  reduced direct photon statistics \\
     & & & more difficult jet    unfolding \\
-    \midrule
-    \multirow{2}{*}{Thin outer HCal} & \multirow{2}{*}{-0.4} &
-    \multirow{2}{*}{-2.6} & high $p_T$ punch-through \\
-    & & & risk to
-    schedule \\
-    \midrule
-    \multirow{2}{*}{Short HCal} & \multirow{2}{*}{-0.7} & \multirow{2}{*}{-3.3} & reduced acceptance for jets \\
-    & & & no clear volume for possible forward tracking \\
-    \midrule
-    \multirow{3}{*}{Remove inner HCal} & \multirow{3}{*}{-0.8} &
-    \multirow{3}{*}{-4.1} & worsened jet response \\ 
-    & & & jet flavor bias \\
-    & & & worsened $e/\pi$ in p+p \\
     \bottomrule
   \end{tabular}
   \caption{Ordered list of re-scoping options for the sPHENIX
@@ -53,4 +45,28 @@ those cost changes.
     associated with the particular option. The column labeled
     ``$\Sigma$'' is the running sum of the cumulative cost changes.}
   \label{tab:rescoping_options}
+\end{table}
+
+\begin{table}[hbt]
+  \begin{tabular}{ld{3.1}p{3.25in}}
+    \toprule
+    Option & \multicolumn{1}{c}{$\Delta$ (\$M)} & Impacts \\
+    \midrule
+    \multirow{4}{*}{Thin outer HCal} & \multirow{4}{*}{-0.4} & high $p_T$ punch-through \\
+    & & worsened jet energy response \\
+    & & extensive reengineering required \\
+    & & risk to schedule \\
+    \midrule
+    \multirow{2}{*}{Short HCal} & \multirow{2}{*}{-0.7} & reduced acceptance for jets \\
+    & &  no clear volume for possible forward tracking \\
+    \midrule
+    \multirow{3}{*}{Remove inner HCal} & \multirow{3}{*}{-0.8} & worsened jet response \\ 
+    & &  jet flavor bias \\
+    & &  worsened $e/\pi$ in p+p \\
+    \bottomrule
+  \end{tabular}
+  \caption{List of considered HCal modifications.  The savings are
+    relatively modest compared to the goal, the effect on the physics
+    moderate, but the risk to the schedule is very large.}
+  \label{tab:calo_options}
 \end{table}
