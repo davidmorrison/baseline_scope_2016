@@ -308,3 +308,31 @@ the physics performance for any of the benchmark measurements.
 We expect that the proposed change of event-building strategy will not significantly affect the physics performance for any of the benchmark measurements,
 although it will likely introduce an additional latency in the initial offline reconstruction that remains to be evaluated.
 
+\section{Interference of calorimeter options}
+Most of the re-scoping options discussed in this document can be considered independently and combined to achieve certain levels of savings 
+and physics performance. This is not the case when considering combinations of some of the HCAL and EMCal options with respect to the 
+jet reconstruction performance. This includes in particular:
+\begin{itemize}
+\item Thinning of the outer HCAl by $\approx 20$~cm
+\item Removal of the inner HCal
+\item Reduction of the EMCal acceptance to $|\eta| < 0.6$
+\end{itemize}
+Each of these options in essence removes about one interaction length from the calorimeter system. Our simulations show that for a 
+change by one interaction length the resulting change in calorimeter response is significant, but not dominant compared to the typical
+systematic uncertainties achieved in such measurements. Combining two such changes in the same acceptance region however leads to 
+a degradation in energy containment that significantly degrades performance. An example of this is shown for the combined effect of 
+outer HCAL thinning and reduced EMCal acceptance in Fig.~\ref{fig:JetResponse25GeV_CaloStackVariants_Nevt20k_ETABIN2}. While the
+performance compared to the nominal configuration is acceptable for either the thinned outer HCal (blue) or the reduced acceptance EMCal,
+the combination of both changes, shown as green markers, leads to a jet energy response with a most likely ratio of $p_T^{reco}/p_T^{truth} 
+\approx 0.3$ and a wide tail. Experience at LHC suggest that it is unlikely that such a response function could be unfolded with sufficient accuracy
+to yield high precision jet spectra. In essence, the options listed above are mutually exclusive when aiming for accurate jet energy
+measurements.
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figs/sPHENIX_JetResponse25GeV_CaloStackVariants_Nevt20k_ETABIN2}
+  \caption{Jet response for low \pt jets at forward $|\eta| > 0.7$ for four calorimeter configurations:
+   nominal (black markers), reduced EMCal acceptance (red), thinned outer HCAL (blue) and a combination
+   reduced acceptance EMCal and thinned outer HCal (green markers).}
+  \label{fig:JetResponse25GeV_CaloStackVariants_Nevt20k_ETABIN2}
+\end{figure}
