@@ -85,7 +85,8 @@ with major impact on engineering of the inner detector mechanical design leading
 We therefore did not perform detailed studies of this option.
 
 \section{EMCal}
-\subsection{2$\times$2 ganging of EMCal channels}
+\subsection{Changing EMCal segmentation}
+\subsubsection{2$\times$2 ganging of EMCal channels}
 The reduced EMCal segmentation from 2x2 ganging of readout channels is expected to affect three physics areas: jet finding 
 and jet energy reconstruction, electron/hadron separation for the $\Upsilon$ to $e^+ e^-$ channel and photon identification.
 We performed full \geant and reconstruction studies of the effect on the single jet response and full \geant simulations for 
@@ -127,7 +128,7 @@ jet and background energies are unchanged.
 \paragraph{Effect electron/hadron separation}
 
 The hadron rejection factors  for the $2\times 2$ EMCal readout ganging where obtained for HIJING simulations of central Au+Au collisions, and are
-shown for negative (left) and positive (right) hadrons as a function of electron efficiency in Fig.~\ref{eid_auau}. 
+shown for negative (left) and positive (right) hadrons as a function of electron efficiency in Fig.~\ref{fig:eid_auau}. 
 The relative change compared to simulations of the nominal EMCal configuration can be seen in Fig.~\ref{fig:jet_containment_nominal}(right), which shows
 the ratio of the hadron rejection factor between the ganged configuration and the nominal configuration as a function
 of electron efficiency for central Au+Au collisions. The change in rejection factor ranges from the 0.7 for low \pt hadrons
@@ -137,7 +138,7 @@ electron efficiency. The rejection factor for the nominal configuration is twice
 for $\Upsilon$ studies in the pCDR. The loss in rejection by a factor of two for the ganged configuration is significant, but
 will still allow the $\Upsilon$ program as discussed in the pCDR, albeit with a reduced safety margin.
 
-\subsection{Changing EMCal segmentation}
+\subsubsection{Increasing EMCal tower size}
 The reduced EMCal segmentation from increasing the tower dimensions
 from $d\eta \times d\phi = 0.024 \times 0.024$ to $0.033 \times 0.28$
 was not evaluated with full \geant simulations, as time did not permit
@@ -173,14 +174,14 @@ regions of pseudorapidity and jet \pt.
   \caption{(Left)
   $\Upsilon$ to $e^+ e^-$ acceptance as a function of rapidity for the nominal (blue markers) and $\| \eta \| < 0.6$ configurations,
   averaged over $\Upsilon$ \pt. 
-  (Right) $\Upsilon$ to $e^+ e^-$ acceptance as a function of $\eta$ for the nominal (blue markers) and $\| \eta \| < 0.6$ 
+  (Right) $\Upsilon$ to $e^+ e^-$ acceptance as a function of $\pt$ for the nominal (blue markers) and $\| \eta \| < 0.6$ 
   configurations, averaged over $\eta$.}
   \label{fig:upsilon_rate}
 \end{figure}
 
 Figure~\ref{fig:upsilon_rate} shows the acceptance for $\Upsilon$ to $e^+ e^-$ decays for the nominal and reduced $\eta$ EMCal
 configurations as a function of rapidity (left) and $\pt$ (right). The figures suggest a loss of about 60\% of overall 
-$\Upsilon$ statistics, with the largest effect at low \pt. In $\Upsilon$ pseudorapidity, about one unit in $\eta$ coverage is 
+$\Upsilon$ statistics, with the largest effect at low \pt. In $\Upsilon$ rapidity, about 0.5 units in rapidity reach are 
 lost when requiring equal $\Upsilon$ statistics for nominal and reduced $\eta$ configurations.
 
 \paragraph{Change in jet response} 
@@ -286,7 +287,7 @@ combinations of an ``ideal'' outer tracker consisting of a 4-layer configuration
 the least known dead areas. 
 \end{itemize}
 
-The performance of the 3-layer reference inner tracker can be seen in Fig.~\ref{tracking_reference}, showing the 
+The performance of the 3-layer reference inner tracker can be seen in Fig.~\ref{fig:tracking_reference}, showing the 
 transverse momentum resolution, $d\pt/\pt$, (left), the DCA resolution with respect to the primary vertex (center) 
 and track finding efficiency (right), all as a function of true particle \pt for central HIJING Au+Au collisions. 
 \begin{figure}[hbt]
