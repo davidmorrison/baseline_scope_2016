@@ -5,29 +5,28 @@
 \nocite{*}
 
 In this document the sPHENIX collaboration answers a charge~(see
-Appendix~\ref{charge}) from BNL ALD Berndt Mueller to develop
-a baseline design scope that provides a compelling physics program
-within the constraints of possible DOE funding redirected from 
-RHIC operations. The document describes a reference design based
-on the calorimeter configuration in the sPHENIX pCDR and a tracking system
-combining a 3-layer MAPS inner tracker and a TPC outer tracker. We
-demonstrate the performance of the reference configuration for a
-a compelling physics program focused on three science drivers: jet structure,
-heavy-flavor jet production and $\Upsilon$ spectroscopy. 
-We then provide a comprehensive list of re-scoping options for each
-of the main subdetector systems. For each change we describe the associated
-cost savings, the engineering and schedule impact 
-based on estimates by project leadership in consultation with the 
-engineering team and subsystem experts
-at the level of detail achievable in the time allowed. 
-The physics impact of each re-scoping option is studied for a focussed set of performance criteria
-related to the three science drivers, using simulations ranging from
-generator level studies to full detector simulations. Based on the 
-current status of these studies, we develop a 
-rank-ordered list of re-scoping options, including the 
-cumulative cost-savings and science impact, to allow determination
-of an optimal balance of cost savings and science performance.
-
+Appendix~\ref{charge}) from BNL ALD Berndt Mueller to develop a
+baseline design scope that provides a compelling physics program
+within the constraints of possible DOE funding redirected from RHIC
+operations. The document describes a reference design based on the
+calorimeter configuration in the sPHENIX pCDR and a tracking system
+combining a three-layer MAPS inner tracker and a TPC outer tracker. We
+demonstrate the performance of the reference configuration for a a
+compelling physics program focused on three science drivers: jet
+structure, heavy-flavor jet production and $\Upsilon$ spectroscopy.
+We then provide a comprehensive list of re-scoping options for each of
+the main subdetector systems. For each change we describe the
+associated cost savings, the engineering and schedule impact based on
+estimates by project leadership in consultation with the engineering
+team and subsystem experts at the level of detail achievable in the
+time allowed.  The physics impact of each re-scoping option is studied
+for a focussed set of performance criteria related to the three
+science drivers, using simulations ranging from generator level
+studies to full detector simulations. Based on the current status of
+these studies, we develop a rank-ordered list of re-scoping options,
+including the cumulative cost-savings and science impact, to allow
+determination of an optimal balance of cost savings and science
+performance.
 
 \begin{table}[hbt]
   \centering
@@ -50,18 +49,20 @@ of an optimal balance of cost savings and science performance.
     \multicolumn{1}{c}{Scenario A} & \multicolumn{1}{c}{$\Delta$} &
     \multicolumn{1}{c}{Scenario B} & \multicolumn{1}{c}{$\Delta$}  \\
     \midrule
-    two-layer MAPS inner barrel & +3.0 & one-layer MAPS inner barrel & +2.1 \\
-    no reuse of VTX & -0.2 & no reuse of VTX & -0.2 \\
-    reduce TPC readout & -0.5 & reduce TPC readout & -0.5 \\
-    reduce EMCal segmentation & -1.8 &  reduce EMCal segmentation &
-    -1.8 \\
-    reduce EMCal $\eta$ acceptance & -2.0 & further reduce EMCal $\eta$
-    acceptance & -2.2 \\
-    reduce DAQ refresh & -0.5 &    reduce DAQ refresh & -0.5 \\
-    reuse beam-beam trigger counter & -0.5 & reuse beam-beam trigger
-    counter & -0.5 \\
+    two-layer MAPS inner barrel & \twoLayerMAPS & 
+    one-layer MAPS inner barrel & \oneLayerMAPS \\
+    no reuse of VTX & \noVTX & no reuse of VTX & \noVTX \\
+    reduce TPC readout & \reducedTPCreadout & 
+    reduce TPC readout & \reducedTPCreadout \\
+    reduce EMCal segmentation & \reducedEMCalsegmentation &  
+    reduce EMCal segmentation & \reducedEMCalsegmentation \\
+    reduce EMCal $\eta$ acceptance & \reducedEMCaleta & 
+    further reduce EMCal $\eta$ acceptance &  \reducedEMCaletaMore \\
+    reduce DAQ refresh & \reducedDAQ & reduce DAQ refresh & \reducedDAQ \\
+    reuse beam-beam trigger counter & \reuseBBC & 
+    reuse beam-beam trigger counter & \reuseBBC \\
     \midrule
-    \multicolumn{1}{r}{Total} & -2.5 &     \multicolumn{1}{r}{Total} & -3.6 \\
+    \multicolumn{1}{r}{Total} & -2.5 & \multicolumn{1}{r}{Total} & -3.6 \\
     \bottomrule
   \end{tabular}
   \label{tab:scenarios}
