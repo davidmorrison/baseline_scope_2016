@@ -3,19 +3,22 @@
 \label{sec:overview-re-scoping}
 
 In this section we provide an overview of the rescoping options that
-have been considered.  For each item, we state briefly the cost
-savings expected (in direct FY16\$) and the major science and project
-impacts.  The detailed evaluation of each of these options is shown in
-the Appendix.
+have been considered, even ones that are extremely unattractive due to
+the enormous loss of science capbilities, the introduction of project
+schedule risk, or other negative impacts on collaboration interests.
+For each item, we state briefly the cost savings expected (in direct
+FY16\$) and the major science and project impacts.  The detailed
+evaluation of each of these options is shown in the Appendices.
 
 We considered reducing the depth of the outer HCal by 20~cm
 (approximately one interaction length).  The cost savings would be
-\$0.4M.  This would not be a recoverable change. The impact on the jet
-energy response would be moderate.  This change would result in a
-significant increase in risk to the project schedule.
+\${\thinnedOuterHCal}M.  This would not be a recoverable change. The
+impact on the jet energy response would be moderate.  This change
+would result in a significant increase in risk to the project
+schedule.
 
 Shortening the outer and inner HCal, reducing their $\eta$ coverage to
-$\pm0.9$ would produce savings of \$0.7M.  This would not be a
+$\pm0.9$ would produce savings of \${\shortenedHCal}M.  This would not be a
 recoverable change.  It would reduce the acceptance for jets, directly
 reducing statistics, and generating increased difficulties for
 studying and controlling systematic uncertainties.  It would require
@@ -27,60 +30,93 @@ would not be possible to eventually realize the forward hadron arm
 required for an EIC detector as there would be insufficient space for 
 both tracking and particle identification.
 
-We considered reducing the granularity of the EMCal, reducing the
+We considered leaving out the inner HCal entirely.  The inner HCal has
+three important functions in sPHENIX.  It provides an interaction
+length of active detector near the shower max of a hadron shower,
+serves as a tail-catcher for EM shower energy leaking out of the back
+of the EMCal, and is the structural support for the EMCal.  The
+structural support function could be replaced with approximately three
+months of engineering work and \$100k in new M\&S cost.  The net
+savings would be \${\noInnerHCal}M.  Without the inner HCal, the
+EM-shower tail-catching function would have to be provided by the
+outer Hcal.  Due to the distance and the amount of inactive material
+between the EMCal and outer HCal, the outer HCal performs poorly as a
+tail-catcher.  Finally with no inner HCal, a hadron that starts
+showering in the EMCal would emerge into an air gap containing a 1.5~T
+field followed by the magnet plus cryostat and then the outer HCal.
+The shower would be distorted in a way that must be better understood
+before we can quantify its effect energy resolution, jet
+identification or the ability to subtract the underlying event.
+
+We have considered reducing the granularity of the EMCal, reducing the
 number of towers and their associated electronics.  This produces a
 savings of \$1.8M.  The would not be a recoverable change.  The major
 effect on the science would be a worsened $e/\pi$ separation,
 particularly in Au+Au collisions, effectively reducing the $\Upsilon$
 statistics.  It would require both the EMCal and the inner HCal
-structures to be re-engineered.  Practicalities of producing larger towers
-would have to investigated and it is possible that further test beam
-time would be needed to validate the design.
+structures to be re-engineered.  Practicalities of producing larger
+towers would have to investigated and it is possible that further test
+beam time would be needed to validate the design.
 
-We considered ganging together the electronic readouts of 2x2
-collections of EMCal towers. This would produce savings of \$1.7M.  It
-would be a recoverable change.  The major effects on the science are
-similar to the reduced granularity option, except that the effective
-tower size is even larger.  There is a risk that funding to recover
-the deferred electronics will not be identified and the experiment is
-left with the even coarser segmentation.  The project impact is
-moderate and would require engineering the electronic ganging and
-additional QA checks during construction on the relative gain of
-ganged SiPMs. 
+We have considered ganging together the electronic readouts of 2x2
+collections of EMCal towers. This produces savings very similar to
+that of reducing the granularity of the detector, \$1.8M.  It would be
+a recoverable change.  The major effects on the science are similar to
+the reduced granularity option, except that the effective tower size
+is even larger.  It introduces the risk that funding to recover the
+deferred electronics will not be identified and the experiment is left
+with the even coarser segmentation.  The project impact is moderate
+and would require engineering the electronic ganging and additional QA
+checks during construction on the relative gain of ganged SiPMs.
 
-For each of these EMCal options we further considered reducing the
-pseudorapidity coverage to $|\eta| < 0.7$.  The savings in both cases
-is very similar at \$2M.  This is a recoverable change.  The science
-effects are reduced acceptance for photons and for the $\Upsilon$
-family and the introduction into the acceptance of varying material
-thickness, which introduces additional complications in controlling
-the jet response systematics. The effect on the project is moderate.
+For each of the EMCal segmentation reducing options we further
+considered reducing the pseudorapidity coverage to $|\eta| < 0.6$.
+The savings in both cases is very similar at \${\reducedEMCaleta}M.
+This is a recoverable change.  The science effects are reduced
+acceptance for photons and for the $\Upsilon$ family and the
+introduction into the acceptance of varying material thickness, which
+introduces additional complications in controlling the jet response
+systematics. The effect on the project is moderate.
 
 We considered sparsifying the TPC readout, instrumenting only every
-other row of readout pads.  This is expected to save \$0.5M.  It is a
-potentially recoverable change. The effect on key sPHENIX science
-priorities is moderate, however, the capability for $dE/dx$
-measurements is worsened.  The effect on the project is minimal. 
+other row of readout pads.  This is expected to save
+\${\reducedTPCreadout}M.  It is a potentially recoverable change. The
+effect on key sPHENIX science priorities is moderate, however, the
+capability for $dE/dx$ measurements is worsened.  The effect on the
+project is minimal.
 
 We considered reducing the elements of the DAQ/Trigger that would be
-built or refreshed.  This is expected to save \$1.5M.  It is a
-recoverable change.  The effect on the science is tolerable, though it
-introduces the risk of delays in analyzing acquired data, and could
-reduce the volume of recorded minimum bias data signiicantly. The
-effect on the project is minimal.
+built or refreshed.  Reusing an existing beam-beam counter could save
+\${\reuseBBC}M and reducing the refresh of DAQ hardware could save
+\${\reducedDAQ}M.  These are recoverable changes.  The effect on the
+science is tolerable, though it introduces the risk of delays in
+analyzing acquired data, and could reduce the volume of recorded
+minimum bias data significantly. The effect on the project is minimal.
 
 We have considered leaving the reconfigured VTX out of sPHENIX
-entirely.  This is expected to save \$0.2M.  The continued experience
+entirely.  This is expected to save \${\noVTX}M.  The continued experience
 with the VTX pixels in Run-16 --- in terms of functioning area and
 operational stability --- has added to the collaboration's
 determination that the reconfigured pixels cannot deliver sPHENIX
 physics. 
 
-As a result, we have considered introducing a two-layer MAPS-based
-inner tracker and removing any dependence on the reuse of the PHENIX
-VTX pixels.  This does not produce savings; rather it costs an
-additional \$3M.  The effect on the science case is very positive,
-preserving HF--tagged jet and open HF capabilities.
+We have considered introducing a two-layer MAPS-based inner tracker
+and removing any dependence on the reuse of the PHENIX VTX pixels.
+This would cost \${\twoLayerMAPS}M.  The effect on the science case is very
+positive, preserving HF--tagged jet and open HF capabilities. 
+
+We have also considered the physics and cost effect of one-layer of
+MAPS-based inner pixels.  Implementing a single pixel layer would cost
+\${\oneLayerMAPS}M.  As with the two-layer MAPS option, it removes any
+dependence on the reuse of the PHENIX VTX pixels.  In conjunction with
+knowledge of the primary vertex obtained using beam-beam trigger
+counters, a single layer of pixels with a short integration time (the
+ALPIDE chip aims for 4~$\mu s$ compared to 185.6~$\mu s$ for the STAR
+HFT) might be able to provide the tracking support needed by the TPC,
+though this would take further study to establish conclusively.
+Compared to the two-layer inner tracker, however, one loses the
+HF--tagged jet and open HF capabilities.
+
 
 
 
