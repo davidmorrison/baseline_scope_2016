@@ -21,29 +21,33 @@ those cost changes.
     Option & \multicolumn{1}{c}{$\Delta$ (\$M)} &
     \multicolumn{1}{c}{$\Sigma$ (\$M)} & Impacts \\
     \midrule
-    \multirow{3}{*}{MAPS inner tracker} &  \multirow{3}{*}{3.0} &
+    \multirow{3}{*}{two-layer MAPS inner barrel} &  \multirow{3}{*}{\twoLayerMAPS} &
     \multirow{3}{*}{3.0} & preserve HF jet tagging \\
     & & & support for TPC tracks \\
     & & & greater $z_\mathrm{vertex}$ acceptance \\
     \midrule
-    \multirow{1}{*}{No VTX reuse} & \multirow{1}{*}{-0.2} &
+    \multirow{1}{*}{No VTX reuse} & \multirow{1}{*}{-\noVTX} &
     \multirow{1}{*}{2.8} & see MAPS above \\
     \midrule
-    \multirow{1}{*}{Re-use trigger counter} & \multirow{1}{*}{-0.6} & \multirow{1}{*}{2.2} & potentially worsened vertex
+    \multirow{2}{*}{Sparsified TPC readout} & \multirow{2}{*}{-\reducedTPCreadout} &
+    \multirow{2}{*}{2.3} & worsened $\Upsilon$ mass resolution \\
+    & & & worsened $dE/dx$ resolution \\
+    \midrule
+    \multirow{1}{*}{Re-use beam-beam counter} & \multirow{1}{*}{-\reuseBBC} & \multirow{1}{*}{1.8} & potentially worsened vertex
     resolution \\ 
     \midrule
-    \multirow{3}{*}{DAQ} & \multirow{3}{*}{-0.9} &
+    \multirow{3}{*}{Reduced DAQ refresh} & \multirow{3}{*}{-\reducedDAQ} &
     \multirow{3}{*}{1.3} & possible reduction of min. bias data sample
     \\ 
     & & & potential delay to analysis \\
     & & &  operational risk of past-EOL equipment \\
     \midrule
-    2x2 EMCal tower ganging & \multirow{3}{*}{-1.7} & \multirow{3}{*}{-0.4} & worsened $e/\pi$ separation \\
+    2x2 EMCal tower ganging & \multirow{3}{*}{-\reducedEMCalsegmentation} & \multirow{3}{*}{-0.5} & worsened $e/\pi$ separation \\
     or & & & reduced $\Upsilon$ statistics \\
     coarsened segmentation & & & worsened $\gamma$ isolation
     performance \\
     \midrule
-    \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-2.0} & \multirow{3}{*}{-2.4} & reduced $\Upsilon$
+    \multirow{3}{*}{EMCal reduced $\eta$} & \multirow{3}{*}{-\reducedEMCaleta} & \multirow{3}{*}{-2.5} & reduced $\Upsilon$
     statistics \\
     & & &  reduced direct photon statistics \\
     & & &  worse control of jet unfolding systematics\\
