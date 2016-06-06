@@ -1,9 +1,9 @@
 
-Below we describe the simulation studies performed to evaluate the impact of the re-scoping options we identified on the three 
+Below we describe the simulation studies performed to evaluate the impact of the de-scoping options we identified on the three 
 science drivers. We  first compare each change individually to the performance of the reference configuration, and then study
 a select set of changes in combination to evaluate their combined effect on the physics performance. For each option we 
 describe the simulations employed, ranging from generator level evaluations of count rates to single particle and single jet
-\geant simulations + reconstruction to full HIJING central Au+Au \geant simulations and reconstruction. All studies were 
+\geant simulations + reconstruction to full \hijing central Au+Au \geant simulations and reconstruction. All studies were 
 performed for 200 GeV Au+Au collisions.
 \section{Hadronic calorimeter changes}
 \subsection{Outer HCal thinning}
@@ -28,34 +28,48 @@ to serve as flux return (outer radius 220~cm).
   \label{fig:jet_energy_scale_thin_hcal}
 \end{figure}
 \paragraph{Jet energy response}
-Figure~\ref{fig:jet_energy_scale_thin_hcal}(left) shows the energy response, $p_T^{reco}/p_T^{truth}$, 
-of the calorimeter system to high \pT jets for 
-three calorimeter configurations: the nominal outer HCal thickness (outer radius = 260~cm), an outer HCal thinned by about one 
-interaction length (outer radius = 240~cm) and nominal outer HCal and EMCal, but no inner HCal (blue markers). The simulations 
-show only a small loss in total energy containment of FIXME \% for the thinned outer HCal configuration relative to the nominal
-configuration, combined with a moderate increase in the number of jets for which less than 70\% of the energy was reconstructed.
-Further studies showed that the change in the jet response only has a small effect on reconstructing unfolded jet spectra,
-even when uing a Gaussian kernel that ignores the increases low-energy tail. Removing the inner HCal has a significantly larger
-effect on the mean and shape of the jet response.
+Figure~\ref{fig:jet_energy_scale_thin_hcal}(left) shows the energy
+response, $p_T^{reco}/p_T^{truth}$, of the calorimeter system to high
+\pT jets for three calorimeter configurations: the nominal outer HCal
+thickness (outer radius = 260~cm), an outer HCal thinned by about one
+interaction length (outer radius = 240~cm) and nominal outer HCal and
+EMCal, but no inner HCal (blue markers). The simulations show only a
+small loss in total energy containment for the thinned outer HCal
+configuration relative to the nominal configuration, combined with a
+moderate increase in the number of jets for which less than 70\% of
+the energy was reconstructed.  Further studies showed that the change
+in the jet response only has a small effect on reconstructing unfolded
+jet spectra, even when uing a Gaussian kernel that ignores the
+increases low-energy tail. Removing the inner HCal has a significantly
+larger effect on the mean and shape of the jet response.
 
 \paragraph{Fragmentation function bias} 
-One expects that the thinned HCal configuration leads to the biggest change in jet response for jets with high-z fragmentation products that
-are not contained in the calorimeter system. To study this effect, we plot the average jet energy response 
-$\langle p_T^{reco}/p_T^{truth}\rangle$ as a function of the momentum fraction $z$ carried by the highest \pt charged (FIXME) 
-fragment in Fig.~\ref{fig:jet_energy_scale_thin_hcal}(right). Even for the nominal HCal configuration, a dependence of the response on the hardness of the jet fragmentation
-is seen, with a change of about 0.08 in $\langle p_T^{reco}/p_T^{truth}\rangle$ from softest to hardest fragmenting jets. 
-For the thinned HCal configuration, this increases to 0.11-0.13. We expect that this additional bias would only lead to a moderate 
-increase in the uncertainty of fragmentation function ratios for Au+Au/p+p, as the increase is only about 50\% of the 
-bias already seen in the nominal configuration, and present in both p+p and Au+Au events (i.e., only related to the 
-single particle containment). 
+One expects that the thinned HCal configuration leads to the biggest
+change in jet response for jets with high-z fragmentation products
+that are not contained in the calorimeter system. To study this
+effect, we plot the average jet energy response $\langle
+p_T^{reco}/p_T^{truth}\rangle$ as a function of the momentum fraction
+$z$ carried by the highest \pt charged fragment in
+Fig.~\ref{fig:jet_energy_scale_thin_hcal}(right). Even for the nominal
+HCal configuration, a dependence of the response on the hardness of
+the jet fragmentation is seen, with a change of about 0.08 in $\langle
+p_T^{reco}/p_T^{truth}\rangle$ from softest to hardest fragmenting
+jets.  For the thinned HCal configuration, this increases to
+0.11-0.13. We expect that this additional bias would only lead to a
+moderate increase in the uncertainty of fragmentation function ratios
+for Au+Au/p+p, as the increase is only about 50\% of the bias already
+seen in the nominal configuration, and present in both p+p and Au+Au
+events (i.e., only related to the single particle containment).
 
 
 \subsection{Outer HCal shortening}
 
-For the shortened outer HCal (reducing the pseudorapidity coverage from $\| \eta \| <$ FIXME to $\| \eta \| < $ FIXME), all measured
-at the outer corner of the calorimeter) the expected impact 
-is in the statistics of jet related probes. The FIXME\% reduction in coverage will predominantly affect lower \pt jets ($\pt <$ FIXME),
-as jets at the highest \pT have a narrow rapidity distribution that falls within the remaining acceptance. 
+For the shortened outer HCal (reducing the pseudorapidity coverage
+from $|\eta| < 1.1$ to $|\eta| < 0.9$), all measured at the outer
+corner of the calorimeter) the expected impact is in the statistics of
+jet related probes. The reduction in coverage will predominantly
+affect lower \pt jets, as jets at the highest \pT have a narrow
+rapidity distribution that falls within the remaining acceptance.
 \begin{figure}[hbt]
   \centering
   \includegraphics[width=0.4\linewidth]{figs/SingleJet_eta_reference}
@@ -90,7 +104,7 @@ We therefore did not perform detailed studies of this option.
 The reduced EMCal segmentation from 2x2 ganging of readout channels is expected to affect three physics areas: jet finding 
 and jet energy reconstruction, electron/hadron separation for the $\Upsilon$ to $e^+ e^-$ channel and photon identification.
 We performed full \geant and reconstruction studies of the effect on the single jet response and full \geant simulations for 
-Au+Au HIJING events for electron identification. Studies of the effect on photon identification are ongoing.
+Au+Au \hijing events for electron identification. Studies of the effect on photon identification are ongoing.
 
 \paragraph{Effect on jet energy response}
 \begin{figure}[hbt]
@@ -127,16 +141,25 @@ jet and background energies are unchanged.
 
 \paragraph{Effect on electron/hadron separation}
 
-The hadron rejection factors  for the $2\times 2$ EMCal readout ganging were obtained for HIJING simulations of central Au+Au collisions, and are
-shown for negative (left) and positive (right) hadrons as a function of electron efficiency in Fig.~\ref{fig:eid_auau}. 
-The relative change compared to simulations of the nominal EMCal configuration can be seen in Fig.~\ref{fig:jet_containment_nominal}(right), which shows
-the ratio of the hadron rejection factor between the ganged configuration and the nominal configuration as a function
-of electron efficiency for central Au+Au collisions. The change in rejection factor ranges from 0.7 for low \pt hadrons
-at central rapidity to 0.5 for intermediate \pt hadrons at central rapidity. Simulations of the current nominal EMCal 
-configuration show a rejection factor of about 200 for the kinematic range relevant for $\Upsilon$ identification at FIXME\%
-electron efficiency. This rejection factor for the nominal configuration is twice as large as that assumed (FIXME) 
-for $\Upsilon$ studies in the pCDR. The loss in rejection by a factor of two for the ganged configuration is significant, but
-will still allow the $\Upsilon$ program as discussed in the pCDR, albeit with a reduced safety margin.
+The hadron rejection factors for the $2\times 2$ EMCal readout ganging
+were obtained for \hijing simulations of central Au+Au collisions, and
+are shown for negative (left) and positive (right) hadrons as a
+function of electron efficiency in Fig.~\ref{fig:eid_auau}.  The
+relative change compared to simulations of the nominal EMCal
+configuration can be seen in
+Fig.~\ref{fig:jet_containment_nominal}(right), which shows the ratio
+of the hadron rejection factor between the ganged configuration and
+the nominal configuration as a function of electron efficiency for
+central Au+Au collisions. The change in rejection factor ranges from
+0.7 for low \pt hadrons at central rapidity to 0.5 for intermediate
+\pt hadrons at central rapidity. Simulations of the current nominal
+EMCal configuration show a rejection factor of about 200 for the
+kinematic range relevant for $\Upsilon$ identification at 70\%
+electron efficiency. This rejection factor for the nominal
+configuration is twice as large as that assumed for $\Upsilon$ studies
+in the pCDR. The loss in rejection by a factor of two for the ganged
+configuration is significant, but will still allow the $\Upsilon$
+program as discussed in the pCDR, albeit with a reduced safety margin.
 
 \subsubsection{Increasing EMCal tower size}
 The reduced EMCal segmentation from increasing the tower dimensions
@@ -150,10 +173,10 @@ based on the 2x2 ganging full simulations. For the jet response, the
 increased tower size will also have no effect on jets. For $e/h$
 separation, the effect of the 2x2 ganging of about a factor of two
 suggests scaling with the $\sqrt{\mbox{area}}$, i.e., the fluctuations
-in the background energy. This implies a 26\% change (FIXME) in
-$e/\pi$ separation in central Au+Au collisions for the 60\% increase
-in tower size, which is well within the projected safety margin for
-the measurement.
+in the background energy. This implies a 26\% change in $e/\pi$
+separation in central Au+Au collisions for the 60\% increase in tower
+size, which is well within the projected safety margin for the
+measurement.
 
 \subsection{Reduced EMCal pseudorapidity coverage}
 Reducing the EMCal coverage to $\| \eta \| < 0.6$ will directly affect
@@ -195,12 +218,22 @@ lost when requiring equal $\Upsilon$ statistics for nominal and reduced $\eta$ c
   \label{fig:jet_response_reduced_emcal}
 \end{figure}
 
-The effect of reducing the EMCal acceptance to $|\eta| < 0.6$ on the jet energy response, $p_T^{reco}/p_T^{truth}$, was studied
-for low \pt jets, where we expect the largest effect, for three regions of jet pseudorapidity, $|\eta| < 0.5$ (Fig.\ref{fig:jet_response_reduced_emcal}, left), $0.5 < |\eta| < 0.7$ (not shown) and $|\eta| > 0.7$ (Fig.~\ref{fig:jet_response_reduced_emcal}, right). As expected, essentially no change
-is observed for the central rapidity region. For $0.5 < |\eta| < 0.7$, the jet energy response shifts by FIXME \%, while for $|\eta| > 0.7$ a 
-shift of FIXME \% is seen, as well as an enhanced low response tail. Experience at LHC suggest typical best-case jet response uncertainties
-of 2-3\%. Assuming an uncertainty in the correction of the reduced response at large $\eta$ of 50\% or better, the changed response
-compared to the nominal configuration will lead to a significant, but still tolerable increase in unfolding uncertainties for jet spectra.
+The effect of reducing the EMCal acceptance to $|\eta| < 0.6$ on the
+jet energy response, $p_T^{reco}/p_T^{truth}$, was studied for low \pt
+jets, where we expect the largest effect, for three regions of jet
+pseudorapidity, $|\eta| < 0.5$
+(Fig.\ref{fig:jet_response_reduced_emcal}, left), $0.5 < |\eta| < 0.7$
+(not shown) and $|\eta| > 0.7$
+(Fig.~\ref{fig:jet_response_reduced_emcal}, right). As expected,
+essentially no change is observed for the central rapidity region,
+while for $|\eta| > 0.7$ a shift in the mean of several percent and
+the appearance of an enhanced low response tail are
+apparent. Experience at LHC suggest typical best-case jet response
+uncertainties of 2--3\%. Assuming an uncertainty in the correction of
+the reduced response at large $\eta$ of 50\% or better, the changed
+response compared to the nominal configuration will lead to a
+significant, but still tolerable increase in unfolding uncertainties
+for jet spectra.
 
 \begin{figure}[hbt]
   \centering
@@ -223,7 +256,7 @@ statistics by a factor of 2-3, depending on the selected jet radius parameter $R
 \section{Outer tracker}
 
 For the outer tracker, the performance of a TPC tracker was evaluated using \geant simulations of single particles, single $\Upsilon$ to $e^+ e^-$
-decays, and full HIJING and \geant simulations in a limited acceptance around mid-rapidity (due to timing limitations). Simulations were performed
+decays, and full \hijing and \geant simulations in a limited acceptance around mid-rapidity (due to timing limitations). Simulations were performed
 for an ideal TPC and two configurations with inner field cage boundary at $r=20$~cm and $r=30$~cm. For the latter configurations, effects of 
 residual space charge distortions expected after corrections were included. We evaluated general performance characteristics (efficency, fake track
 
@@ -281,26 +314,35 @@ than the ALICE design goal). We find that PrecisionFactors up to 0.01 lead to li
 \section{Inner tracker}
 \label{sec:innertracker}
 
-To isolate the effect of various inner tracker configurations, simulations for central Au+Au HIJING events were performed for 
-combinations of an ``ideal'' outer tracker consisting of a 4-layer configuration of MAPS sensors in cylinder geometry and 
-3 inner tracker configurations:
+To isolate the effect of various inner tracker configurations,
+simulations for central Au+Au \hijing events were performed for
+combinations of an ``ideal'' outer tracker consisting of a 4-layer
+configuration of MAPS sensors in cylinder geometry and 3 inner tracker
+configurations:
 \begin{itemize}
-\item A three-layer MAPS configuraton based on the ALICE ITS IB detector (``reference'')
-\item A two-layer MAPS configuraton corresponding to the two innermost (?? FIXME) layers of ALICE ITS IB detector
-\item A two-layer detector configuraton based on re-used pixel ladders from the PHENIX VTX detector, using ladders with
-the least known dead areas. 
+\item A three-layer MAPS configuraton based on the ALICE ITS IB
+  detector (``reference'')
+\item A two-layer MAPS configuraton corresponding to the two innermost
+  layers of ALICE ITS IB detector
+\item A two-layer detector configuraton based on re-used pixel ladders
+  from the PHENIX VTX detector, using ladders with the least known
+  dead areas.
 \end{itemize}
 
-The performance of the 3-layer reference inner tracker can be seen in Fig.~\ref{fig:tracking_reference}, showing the 
-transverse momentum resolution, $d\pt/\pt$, (left), the DCA resolution with respect to the primary vertex (center) 
-and track finding efficiency (right), all as a function of true particle \pt for central HIJING Au+Au collisions. 
+The performance of the 3-layer reference inner tracker can be seen in
+Fig.~\ref{fig:tracking_reference}, showing the transverse momentum
+resolution, $d\pt/\pt$, (left), the DCA resolution with respect to the
+primary vertex (center) and track finding efficiency (right), all as a
+function of true particle \pt for central \hijing Au+Au collisions.
 \begin{figure}[hbt]
   \centering
   \includegraphics[width=0.9\linewidth]{figs/tracking_performance_reference}
-  \caption{Tracking performance for the reference detector configuration with an
-  outer TPC tracker and a 3-layer MAPS inner tracker. Shown are \pt resolution (left), 
-  DCA resolution with respect to the primary vertex (center) and track finding efficiency (right), all as a function
-of true particle \pt for central HIJING Au+Au collisions.}
+  \caption{Tracking performance for the reference detector
+    configuration with an outer TPC tracker and a 3-layer MAPS inner
+    tracker. Shown are \pt resolution (left), DCA resolution with
+    respect to the primary vertex (center) and track finding
+    efficiency (right), all as a function of true particle \pt for
+    central \hijing Au+Au collisions.}
   \label{fig:tracking_reference}
 \end{figure}
 
@@ -369,7 +411,7 @@ although it will likely introduce an additional latency in the initial offline r
 $0.7 < |\eta| < 0.9$ (right) }
   \label{fig:JetResponse25GeV_CaloStackVariants_Nevt20k}
 \end{figure}
-Most of the re-scoping options discussed in this document can in good approximation be evaluated independently and combined to achieve certain levels of savings 
+Most of the de-scoping options discussed in this document can in good approximation be evaluated independently and combined to achieve certain levels of savings 
 and physics performance. This is not the case when considering combinations of some of the HCAL and EMCal options with respect to the 
 jet reconstruction performance. This includes in particular:
 \begin{itemize}
